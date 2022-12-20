@@ -158,7 +158,7 @@ const drawAtlasFromBin = (bin: packerBin, binInd: number) => {
         meta: {
             app: 'https://ctjs.rocks/',
             version: process.versions.ctjs,
-            image: `a${binInd}.png`,
+            image: `a${binInd}.png?v=${+new Date()}`,
             format: 'RGBA8888',
             size: {
                 w: bin.width,

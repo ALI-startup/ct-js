@@ -35,6 +35,7 @@ const substituteHtmlVars = (str, project, injections) =>
     templateHTML(str, {
         gametitle: project.settings.title || 'ct.js game',
         accent: project.settings.accent || 'ct.js game',
+        ver: project.settings.authoring.version ? project.settings.authoring.version.join('.') : '0.0.0',
         particleEmitters: project.emitterTandems && project.emitterTandems.length,
         includeDragonBones: project.skeletons.some(s => s.from === 'dragonbones')
     }, injections);
