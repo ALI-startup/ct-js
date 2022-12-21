@@ -91,7 +91,7 @@
     };
 
     var handleHoverStart = function (e) {
-        window.focus();
+        // window.focus();
         const pointer = copyPointer(e);
         ct.pointer.hover.push(pointer);
         if (e.isPrimary) {
