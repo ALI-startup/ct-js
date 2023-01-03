@@ -44,7 +44,8 @@ const path = require('path'),
  * Also note that you may need to clear the `ct-js/cache` folder.
  */
 const nwVersion = versions.nwjs,
-      platforms = ['win64'],
+      // platforms = ['win64', 'osx64', 'osxarm'],
+      platforms = ['osx64', 'osxarm'],
       nwFiles = ['./app/**', '!./app/export/**', '!./app/projects/**', '!./app/exportDesktop/**', '!./app/cache/**', '!./app/.vscode/**', '!./app/JamGames/**'];
 
 const argv = minimist(process.argv.slice(2));
