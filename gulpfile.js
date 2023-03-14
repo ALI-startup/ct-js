@@ -580,7 +580,7 @@ const packages = gulp.series([
     abortOnWindows,
     gulp.parallel([
         build,
-        docs,
+        // docs,
         examples,
         templates,
         gallery
